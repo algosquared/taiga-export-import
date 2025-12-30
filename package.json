@@ -1,0 +1,42 @@
+{
+	"name": "taiga-import-export",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Electron app for exporting Taiga user stories and epics between projects.",
+	"license": "MIT",
+	"main": "background.js",
+	"scripts": {
+		"serve": "vue-cli-service serve",
+		"build": "vue-cli-service build",
+		"prod": "vue-cli-service build --mode production",
+		"electron:build": "vue-cli-service electron:build",
+		"electron:serve": "vue-cli-service electron:serve",
+		"dist:mac": "vue-cli-service electron:build --mac",
+		"dist:win": "vue-cli-service electron:build --win",
+		"dist:all": "vue-cli-service electron:build --mac --win",
+		"postinstall": "electron-builder install-app-deps",
+		"postuninstall": "electron-builder install-app-deps"
+	},
+	"dependencies": {
+		"axios": "^1.3.4",
+		"core-js": "^3.6.5",
+		"vue": "^3.0.0",
+		"vue-router": "^4.0.0-0",
+		"vue3-toastify": "^0.1.6",
+		"vuex": "^4.0.0-0"
+	},
+	"devDependencies": {
+		"@vue/cli-plugin-babel": "^5.0.8",
+		"@vue/cli-plugin-router": "^5.0.8",
+		"@vue/cli-plugin-vuex": "^5.0.8",
+		"@vue/cli-service": "^5.0.8",
+		"@vue/compiler-sfc": "^3.0.0",
+		"electron": "^24.1.1",
+		"electron-builder": "^23.6.0",
+		"electron-devtools-installer": "^3.1.0",
+		"sass": "^1.77.6",
+		"sass-loader": "^13.2.2",
+		"url-loader": "^4.1.1",
+		"vue-cli-plugin-electron-builder": "~2.1.1"
+	}
+}
