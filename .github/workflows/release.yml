@@ -24,18 +24,18 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "18"
-          cache: "yarn"
+          cache: "npm"
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile
+        run: npm ci
 
       - name: Build macOS artifacts
         if: matrix.os == 'macos-latest'
-        run: yarn dist:mac
+        run: npm run dist:mac
 
       - name: Build Windows artifacts
         if: matrix.os == 'windows-latest'
-        run: yarn dist:win
+        run: npm run dist:win
 
       - name: Upload build artifacts
         uses: actions/upload-artifact@v4
