@@ -3,7 +3,7 @@
 Electron app for exporting Taiga user stories and epics between projects.
 
 ## Downloads
-Get macOS `.dmg` or Windows `.exe` from:
+Get macOS `.zip` or Windows `.exe` from:
 https://github.com/algosquared/taiga-export-import/releases
 
 ## Usage
@@ -43,9 +43,6 @@ npm run dist:mac
 npm run dist:win
 npm run dist:all
 ```
-
-## Configuration
-The Taiga API base URL is defined in `src/store/index.js`. Update it if you use a self-hosted Taiga instance.
 
 ## License
 MIT. See `LICENSE`.

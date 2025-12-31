@@ -298,7 +298,9 @@ export default {
 			} catch (e) {
 				this.projects = [];
 				this.showError(e);
-				this.logout();
+				setTimeout(() => {
+					this.logout();
+				}, 3000);
 			}
 		},
 

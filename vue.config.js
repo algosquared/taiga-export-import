@@ -11,7 +11,7 @@ module.exports = {
 				},
 				artifactName: "${productName}-${version}-${os}-${arch}.${ext}",
 				mac: {
-					target: ["dmg", "zip"],
+					target: ["zip"],
 					icon: "build/icon.png",
 				},
 				win: {
